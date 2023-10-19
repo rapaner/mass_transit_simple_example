@@ -1,11 +1,11 @@
-# Пример работы MassTransit
+п»ї# РџСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ MassTransit
 
-## Подготовка к запуску
-Для запуска необходим Docker Desktop и запущенный контейнер с образом rabbitmq
+## РџРѕРґРіРѕС‚РѕРІРєР° Рє Р·Р°РїСѓСЃРєСѓ
+Р”Р»СЏ Р·Р°РїСѓСЃРєР° РЅРµРѕР±С…РѕРґРёРј Docker Desktop Рё Р·Р°РїСѓС‰РµРЅРЅС‹Р№ РєРѕРЅС‚РµР№РЅРµСЂ СЃ РѕР±СЂР°Р·РѕРј rabbitmq
 
-## Проекты
-MassTransitExample является производителем данных.\
-В [OrdersController](MassTransitExample/Controllers/OrdersController.cs) три метода:
-- CreateOrder - публикует событие методом Publish, которое обрабатывается в [OrderCreatedConsumer](Consumer/OrderCreatedConsumer.cs)
-- CancelOrder - команда с помощью метода Send, которая обрабатывается в [CancelOrderConsumer](Consumer/CancelOrderConsumer.cs)
-- GetOrder - запрос с помощью RequestClient, который обрабатывается в [GetOrderRequestConsumer](Consumer/GetOrderRequestConsumer.cs)
+## РџСЂРѕРµРєС‚С‹
+MassTransitExample СЏРІР»СЏРµС‚СЃСЏ РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµРј РґР°РЅРЅС‹С….\
+Р’ [OrdersController](MassTransitExample/Controllers/OrdersController.cs) С‚СЂРё РјРµС‚РѕРґР°:
+- CreateOrder - РїСѓР±Р»РёРєСѓРµС‚ СЃРѕР±С‹С‚РёРµ РјРµС‚РѕРґРѕРј Publish, РєРѕС‚РѕСЂРѕРµ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚СЃСЏ РІ [OrderCreatedConsumer](Consumer/OrderCreatedConsumer.cs)
+- CancelOrder - РєРѕРјР°РЅРґР° СЃ РїРѕРјРѕС‰СЊСЋ РјРµС‚РѕРґР° Send, РєРѕС‚РѕСЂР°СЏ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚СЃСЏ РІ [CancelOrderConsumer](Consumer/CancelOrderConsumer.cs)
+- GetOrder - Р·Р°РїСЂРѕСЃ СЃ РїРѕРјРѕС‰СЊСЋ RequestClient, РєРѕС‚РѕСЂС‹Р№ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚СЃСЏ РІ [GetOrderRequestConsumer](Consumer/GetOrderRequestConsumer.cs)
